@@ -7,21 +7,30 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="whats-aap-cotainer">
-        <img id="whatsapp" src="/icons/whatsapp.png">
+    <div class="whats-app-container">
+      <img id="whatsapp" src="/icons/whatsapp.png" />
     </div>
     <nav>
       <div class="contact-container">
         <div class="left-contact">
-          <div class="phone-no">
-            <img class="contact" src="./icons/call.png" />
-            <p>+91 9876543219</p>
+          <div class="phone-no center-text">
+            <a class="remove-link" href="tel: 9999999999">
+              <img class="contact" src="./icons/call.png" />
+            </a>
+            <a class="remove-link" href="tel: 9999999999">
+              <p>+91 9876543219</p>
+            </a>
           </div>
-          <div class="email">
-            <img class="contact" src="./icons/mail.png" />
-            <p>service@rjmg.com</p>
+          <div class="email center-text">
+            <a href="mailto:contact@rjmgconsultancy.com">
+              <img class="contact" src="./icons/mail.png" />
+            </a>
+            <a class="remove-link" href="mailto:contact@rjmgconsultancy.com">
+              <p>contact@rjmgconsultancy.com</p>
+            </a>
           </div>
-          <div class="fix-appointment"><p>Fix Appointment</p></div>
+          <!-- <div class="fix-appointment"><p>Fix Appointment</p>
+          </div> -->
         </div>
         <div class="right-contact">
           <div class="facebook"><img src="./icons/Facebook.png" /></div>
@@ -36,79 +45,126 @@
         <div class="right-menu-container">
           <ul>
             <a><li>Home</li></a>
-            <a><li>About</li></a>
-            <a><li>Service</li></a>
-            <a><li>Contact us</li></a>
+            <a href="#footer-redirect"><li>About</li></a>
+            <a href="#footer-redirect"><li>Service</li></a>
+            <a href="#footer-redirect"><li>Contact us</li></a>
+          </ul>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <div class="menu-container-mobile">
+          <div class="left-logo-container">
+            <img src="./icons/logo1.png" />
+          </div>
+          <img onclick="menuClicked()" id="menu-icon-mobile" src="./icons/menu.png" />
+        </div>
+        <div id="menu-mobile-items"  class="menu-mobile-items">
+          <ul>
+            <div class="menu-child">
+              <a><li>Home</li></a>
+            </div>
+            <div class="menu-child">
+              <a href="#footer-redirect"><li>About</li></a>
+            </div>
+            <div class="menu-child">
+              <a href="#footer-redirect"><li>Service</li></a>
+            </div>
+            <div class="menu-child">
+              <a href="#footer-redirect"><li>Contact us</li></a>
+            </div>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="main-container">
-      <img id="cover-image" src="./images/cover.avif" />
-    </div>
-    <div class="short-intro-container">
-      <div class="intro-details-container">
-        <h2>Why work with us?</h2>
-        <p>
-          When considering the selection of a company for online services and
-          consultancy, including audits, business registration, and other
-          documentation, our company stands out for several compelling reasons.
-          Firstly, we have a team of highly experienced professionals with a
-          deep understanding of the industry and a track record of delivering
-          excellent results. Our expertise allows us to navigate complex
-          regulatory requirements and provide accurate and reliable advice
-          tailored to each client's specific needs. Additionally, we prioritize
-          customer satisfaction and strive to provide exceptional service,
-          ensuring that our clients receive personalized attention and timely
-          support throughout their engagement with us. By choosing our company,
-          you can trust in our commitment to professionalism, efficiency, and
-          delivering solutions that meet and exceed your expectations.
-        </p>
-      </div>
-      <div class="intro-image-container">
-        <img src="./images/hardwork.avif" />
-      </div>
-    </div>
-    <div class="services-container">
-      <h1>Our Services</h1>
-      <div class="service-items-container">
-        <div class="service-item">
-          <h4 class="service-heading">Audits</h4>
-          <p class="service-details">
-            We offer quality audit done by professionls who are expenrt in
-            feilds
-          </p>
+    <main>
+      <div class="slider-plus-container">
+        <div>
+          <img onclick="goPrev()" class="arrow" src="./icons/left=arrow.png" />
         </div>
-        <div class="service-item">
-          <h4 class="service-heading">Taxation</h4>
-          <p class="service-details">
-            We offer all kind of service related to texation
-          </p>
+        <div class="slider-container">
+          <img class="slides" src="./images/cover.avif" />
+          <img class="slides" src="https://picsum.photos/id/237/1000/1000" />
+          <img
+            class="slides"
+            src="https://picsum.photos/seed/picsum/1000/1000/"
+          />
         </div>
-        <div class="service-item">
-          <h4 class="service-heading">GST</h4>
-          <p class="service-details">
-            We help in GST registration and GST documentaions
-          </p>
-        </div>
-        <div class="service-item">
-          <h4 class="service-heading">Business Registration</h4>
-          <p class="service-details">
-            Start your business with hassle free proper and legal registration.
-          </p>
-        </div>
-        <div class="service-item">
-          <h4 class="service-heading">Others</h4>
-          <p class="service-details">
-            Get in touch if you have any specific need. We will be glad to help!
-          </p>
+        <div>
+          <img class="arrow" onclick="goNext()" src="./icons/right-arrow.png" />
         </div>
       </div>
-    </div>
-    <footer>
+
+      <!-- <div class="slider-button-container">
+        <button onclick="goPrev()">Prev</button>
+        <button onclick="goNext()">Next</button>
+      </div> -->
+      <div class="short-intro-container">
+        <div class="intro-details-container">
+          <h2>Why work with us?</h2>
+          <p>
+            When considering the selection of a company for online services and
+            consultancy, including audits, business registration, and other
+            documentation, our company stands out for several compelling
+            reasons. Firstly, we have a team of highly experienced professionals
+            with a deep understanding of the industry and a track record of
+            delivering excellent results. Our expertise allows us to navigate
+            complex regulatory requirements and provide accurate and reliable
+            advice tailored to each client's specific needs. Additionally, we
+            prioritize customer satisfaction and strive to provide exceptional
+            service, ensuring that our clients receive personalized attention
+            and timely support throughout their engagement with us. By choosing
+            our company, you can trust in our commitment to professionalism,
+            efficiency, and delivering solutions that meet and exceed your
+            expectations.
+          </p>
+        </div>
+        <div class="intro-image-container">
+          <img src="./images/hardwork.avif" />
+        </div>
+      </div>
+      <div class="services-container">
+        <h1>Our Services</h1>
+        <div class="service-items-container">
+          <div class="service-item">
+            <h4 class="service-heading">Audits</h4>
+            <p class="service-details">
+              We offer quality audit done by professionls who are expenrt in
+              feilds
+            </p>
+          </div>
+          <div class="service-item">
+            <h4 class="service-heading">Taxation</h4>
+            <p class="service-details">
+              We offer all kind of service related to texation
+            </p>
+          </div>
+          <div class="service-item">
+            <h4 class="service-heading">GST</h4>
+            <p class="service-details">
+              We help in GST registration and GST documentaions
+            </p>
+          </div>
+          <div class="service-item">
+            <h4 class="service-heading">Business Registration</h4>
+            <p class="service-details">
+              Start your business with hassle free proper and legal
+              registration.
+            </p>
+          </div>
+          <div class="service-item">
+            <h4 class="service-heading">Others</h4>
+            <p class="service-details">
+              Get in touch if you have any specific need. We will be glad to
+              help!
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer-redirect">
       <div class="footer-details">
         <div class="about-us-container">
-          <h3>About us</h3>
+          <h2>About us</h2>
           <p>
             Our company specializing in audits, business registration, and
             related services. With our team of experts, we offer comprehensive
@@ -121,28 +177,41 @@
           </p>
         </div>
         <div class="socials">
-            <h2>Contact Us</h2>
-            <div class="call">
-                <img class="contact-footer" src="./icons/call.png" alt="">
-                <p>Call us</p>
-            </div>
-            <div class="writer-us">
-                <img class="contact-footer" src="./icons/mail.png">
-                <p>write us</p>
-            </div>
-            <div class="join">
-                <img src="./icons/linkedin.png" class="contact-footer">
-                <p>Connect with us</p>
-            </div>
+          <h2>Contact Us</h2>
+
+          <div class="social-child">
+            <a href="tel: 9999999999">
+              <img class="contact-footer" src="./icons/call.png" alt="" />
+            </a>
+            <a href="tel: 9999999999">
+              <p>Call us</p>
+            </a>
+          </div>
+          <div class="social-child">
+            <a href="mailto:contact@rjmgconsultancy.com">
+              <img class="contact-footer" src="./icons/mail.png" alt="" />
+            </a>
+            <a href="mailto:contact@rjmgconsultancy.com">
+              <p>Write us</p>
+            </a>
+          </div>
+          <div class="social-child">
+            <a href="https://www.linkedin.com/in/gopalroy1/">
+              <img class="contact-footer" src="./icons/linkedin.png" alt="" />
+            </a>
+            <a href="https://www.linkedin.com/in/gopalroy1/">
+              <p>Connect</p>
+            </a>
+          </div>
         </div>
         <div class="connect-container" id="connect-container">
-            <h3>Fill out this form!</h3>
-          <form name="">
-            <div>
+          <h2>Fill out this form!</h2>
+          <form name="" id="form-container">
+            <div class="form-child">
               <label for="name">Enter name</label>
               <input id="name" type="text" placeholder="Name" />
             </div>
-            <div class="">
+            <div class="form-child">
               <label for="number">Your number </label>
               <input
                 id="number"
@@ -151,21 +220,25 @@
                 required
               />
             </div>
-            <div class="">
-              <label for="email">Email</label>
+            <div class="form-child">
+              <label for="email">Email Address</label>
               <input id="email" type="email" placeholder="yourmail@email.com" />
             </div>
-            
+            <div class="form-child">
+              <label for="requirements">Requirements</label>
+              <input
+                id="requirements"
+                type="text"
+                placeholder="Write your requirements here"
+              />
+            </div>
+            <button id="form-submit" type="submit">submit</button>
+            <p class="form-submit-para" id="form-submit-para"></p>
           </form>
-          
-          <button id="form-submit" type="submit">submit</button>
-          <p class="form-submit-para" id="form-submit-para"></p>
         </div>
-        
       </div>
-      
       <div class="copyright">
-        <p>© 2023 RJMGconsultancy. All Rights Reserved</p>
+        <p>© 2023 RJMG consultancy. All Rights Reserved</p>
       </div>
     </footer>
   </body>
