@@ -1,6 +1,5 @@
 *{
     margin: 0;
-    
     padding: 0;
     /* background-color: black; */
 }
@@ -401,7 +400,7 @@ nav{
 
 
 
-@media screen and (max-width : 516px) {
+@media only screen and (max-width : 516px) {
   .menu-container{
     display: none;
   }
@@ -436,9 +435,6 @@ nav{
 
    .form-child{
     display: flex;
-    /* gap: 10px;
-    align-items: center;
-    justify-content: flex-end; */
     flex-flow: column wrap;
   }
   }
