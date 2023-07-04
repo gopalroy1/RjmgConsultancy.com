@@ -4,21 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>RJMGconsultancy</title>
-    <link rel="stylesheet" href="s1.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="whats-app-container">
-      <img id="whatsapp" src="/icons/whatsapp.png" />
+      <a href="https://wa.me/+918478042563" target="_blank">
+
+        <img id="whatsapp" src="/icons/whatsapp.png" />
+      </a>
     </div>
     <nav>
       <div class="contact-container">
         <div class="left-contact">
           <div class="phone-no center-text">
-            <a class="remove-link" href="tel: 9999999999">
+            <a class="remove-link" href="tel: 8478042563">
               <img class="contact" src="./icons/call.png" />
             </a>
-            <a class="remove-link" href="tel: 9999999999">
-              <p>+91 9876543219</p>
+            <a class="remove-link" href="tel: 8478042563">
+              <p>+91 8478042563</p>
             </a>
           </div>
           <div class="email center-text">
@@ -29,8 +32,6 @@
               <p>contact@rjmgconsultancy.com</p>
             </a>
           </div>
-          <!-- <div class="fix-appointment"><p>Fix Appointment</p>
-          </div> -->
         </div>
         <div class="right-contact">
           <div class="facebook"><img src="./icons/Facebook.png" /></div>
@@ -38,19 +39,7 @@
           <div class="facebook"><img src="./icons/twitter.png" /></div>
         </div>
       </div>
-      <div class="menu-container">
-        <div class="left-logo-container">
-          <img src="./icons/logo1.png" />
-        </div>
-        <div class="right-menu-container">
-          <ul>
-            <a><li>Home</li></a>
-            <a href="#footer-redirect"><li>About</li></a>
-            <a href="#footer-redirect"><li>Service</li></a>
-            <a href="#footer-redirect"><li>Contact us</li></a>
-          </ul>
-        </div>
-      </div>
+      
       <div class="mobile-menu">
         <div class="menu-container-mobile">
           <div class="left-logo-container">
@@ -76,8 +65,24 @@
         </div>
       </div>
     </nav>
+    <div id="menu-container-sticky">
+      <div class="menu-container">
+        <div class="left-logo-container">
+          <img src="./icons/logo1.png" />
+        </div>
+        <div class="right-menu-container">
+          <ul>
+            <a><li>Home</li></a>
+            <a href="#footer-redirect"><li>About</li></a>
+            <a href="#footer-redirect"><li>Service</li></a>
+            <a href="#footer-redirect"><li>Contact us</li></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
     <main>
-      <div class="slider-plus-container">
+      <!-- <div class="slider-plus-container">
         <div>
           <img onclick="goPrev()" class="arrow" src="./icons/left=arrow.png" />
         </div>
@@ -92,6 +97,9 @@
         <div>
           <img class="arrow" onclick="goNext()" src="./icons/right-arrow.png" />
         </div>
+      </div> -->
+      <div class="main-img">
+        <img src="/images/lukas-blazek-mcSDtbWXUZU-unsplash.jpg">
       </div>
       <div class="short-intro-container">
         <div class="intro-details-container">
@@ -156,6 +164,21 @@
         </div>
       </div>
     </main>
+    <h2>Testimonails</h2>
+    <div class="testimonails">
+      <div class="reviews">
+        <p class="review-para">
+          Never Seen such an amazing level of professionalism. Always recommend their services.
+        </p>
+        <p class="by">Biswas Kumar</p>
+      </div>
+      <div class="reviews">
+        <p class="review-para">
+          Never Seen such an amazing level of professionalism. Always recommend their services.
+        </p>
+        <p class="by">Biswas Kumar</p>
+      </div>
+    </div>
     <footer id="footer-redirect">
       <div class="footer-details">
         <div class="about-us-container">
@@ -175,10 +198,10 @@
           <h2>Contact Us</h2>
 
           <div class="social-child">
-            <a href="tel: 9999999999">
+            <a href="tel: 8478042563">
               <img class="contact-footer" src="./icons/call.png" alt="" />
             </a>
-            <a href="tel: 9999999999">
+            <a href="tel:8478042563">
               <p>Call us</p>
             </a>
           </div>
@@ -237,5 +260,5 @@
       </div>
     </footer>
   </body>
-  <script src="sc.js"></script>
+  <script src="script.js"></script>
 </html>

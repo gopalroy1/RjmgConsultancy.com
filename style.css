@@ -3,6 +3,10 @@
     padding: 0;
     /* background-color: black; */
 }
+.hi{
+  position: sticky;
+  top: 0;
+}
 .center-text{
   text-align: center;
 }
@@ -11,17 +15,10 @@
   text-decoration: none;
 }
 /* Styling contact nav bar  */
-body{
-    margin: 0px 0px;
-    
-}
-main{
-  margin-left: 2vw;
-    margin-right: 2vw;
-}
-nav{
-  margin: 0;
-}
+
+
+
+
 .whats-app-container{
   /* display: flex; */
   position: fixed;
@@ -34,6 +31,10 @@ nav{
      
 }
 
+.menu-container{
+  height: 90px;
+}
+
 .contact-container{
     display: flex;
     justify-content: space-between;
@@ -41,6 +42,7 @@ nav{
     align-items: center;
     color: white;
     padding: 20px 20px;
+    
 }
 .left-contact{
     display: flex;
@@ -70,13 +72,22 @@ nav{
 
 /* Menu nav bar styling  */
 
+
 .menu-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
     font-weight: 600;
-    background-color: #F8FBFE;
+    width: 100%;
+    
+  
+}
+#menu-container-sticky{
+  background-color: #F8FBFE;
+    position: sticky;
+    top: 0;
+    padding: 4px 0px;
 }
 .menu-container a{
   text-decoration: none;
@@ -170,7 +181,13 @@ nav{
  
 
 /* //Main container desing 
+
  */
+ .main-img img{
+  width: 100%;
+  height: 100vh;
+  }
+  
  .short-intro-container{
     display: flex;
     justify-content: space-around;
@@ -237,9 +254,32 @@ nav{
     font-size: 19px;
     word-spacing: 4px;
   }
+  /* Testimonials  */
 
   /* //footer  */
 
+  .testimonails{
+   
+    padding: 30px 40px;
+    margin: 15px 5px;
+    display: flex;
+    gap: 40px;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    
+  }
+  .reviews{
+    width: 300px;
+    border: 2px solid red;
+    padding: 10px 10px;
+    /* box-sizing: border-box; */
+    height: 150px;
+    align-content: center;
+  }
+  .by{
+    padding-top: 30px;
+    float: right;
+  }
 
   footer{
     margin-top: 20px;
@@ -410,6 +450,9 @@ nav{
 }
   }
   @media screen and (max-width : 391px ) {
+    .main-img img{
+      height: 50vh;
+    }
     .short-intro-container{
       flex-direction: column;
       margin: 15px 20px;
