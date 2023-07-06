@@ -190,36 +190,8 @@
 /* //Main container desing 
 
  */
- .main-img img{
-  width: 100%;
-  height: 100vh;
-  }
-  
- .short-intro-container{
-    display: flex;
-    justify-content: space-around;
-    margin: 0px 127px;
-    gap: 120px;
-    margin-top: 54px;
-}
-.intro-details-container h2{
-    margin-bottom: 10px;
-    font-size: 30px;
-}
-.intro-details-container h2::first-letter{
-    color: green;
-    font-size: 44px;
-}
-.intro-details-container p{
-    font-size: 18px;
-    word-spacing: 6px;
-    line-height: 25px;
-}
- 
- .intro-image-container img{
-    width: 40vw;
-    border-radius: 18px;
- }
+
+
 
  /* services container desing 
   */
@@ -263,30 +235,50 @@
   }
   /* Testimonials  */
 
-  /* //footer  */
+  #testimonail-heading{
+    margin-top: 45px;
+    margin-left: 45px;
+}
 
   .testimonails{
    
+    padding: 7px 40px;
+    margin: 15px 5px;
+    display: flex;
+    align-items: center;
+    
+  }
+  .review-container{
+    
     padding: 30px 40px;
     margin: 15px 5px;
     display: flex;
-    gap: 40px;
+    gap: 31px;
     border-top: 2px solid gray;
     border-bottom: 2px solid gray;
-    
+    justify-content: space-between;
+    overflow-x: scroll;
+  }
+  .review-container::-webkit-scrollbar{
+    display: none;
   }
   .reviews{
-    width: 300px;
-    border: 2px solid red;
     padding: 10px 10px;
-    /* box-sizing: border-box; */
-    height: 150px;
-    align-content: center;
+  
+  }
+  .review-para{
+    width: 250px;
   }
   .by{
-    padding-top: 30px;
-    float: right;
+    
+    
+   
+    padding: 30px 0;
   }
+  
+  /* //footer  */
+
+  
 
   footer{
     margin-top: 20px;

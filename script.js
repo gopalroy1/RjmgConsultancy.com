@@ -90,3 +90,28 @@ const menuClicked=()=>{
 // setInterval(goNext,2000 );
 
 
+
+// for testimonials styling scrolling 
+
+const reviewContainer = document.getElementById("review-container");
+const leftArrow = document.getElementById("left-arrow")
+const rightArrow = document.getElementById("right-arrow");
+console.log("hi")
+reviewContainer.addEventListener("wheel",(event)=>{
+    event.preventDefault();
+    reviewContainer.style.scrollBehavior="smooth";
+    reviewContainer.scrollLeft += event.deltaY;
+
+})
+
+leftArrow.addEventListener("click",()=>{
+    console.log("left")
+    reviewContainer.style.scrollBehavior="smooth";
+    reviewContainer.scrollLeft-= 750;
+})
+rightArrow.addEventListener("click",()=>{
+    console.log("right")
+    reviewContainer.style.scrollBehavior="smooth";
+    reviewContainer.scrollLeft+= 750;
+})
+
