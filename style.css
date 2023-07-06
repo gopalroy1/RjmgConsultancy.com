@@ -190,6 +190,93 @@
 /* //Main container desing 
 
  */
+ .heading-container p{
+  text-align: center;
+  color: #ACB1B4;
+  font-weight: bold;
+  font-size: 20px;
+  width: 80%;
+  margin: 10px auto;
+ }
+ .save-container{
+  display: flex;
+  width: 70%;
+  margin: 0px auto;
+  margin-top: 30px;
+  justify-content: center;
+  
+ }
+ .save-container h1{
+  font-size: 60px;
+  text-align: center;
+ }
+ #save-money{
+color: blue;
+ }
+ #save-time{
+color: orange;
+ }
+ #popular-products-heading{
+  color: rgba(234, 6, 82, 0.488);
+  margin: 0px 45px;
+  margin-top: 40px;
+  font-size: 35px;
+  border-bottom: 1px solid pink;
+ }
+ #product-catagory-name{
+  margin: 10px 40px;
+ }
+ .product-container{
+  display: flex;
+    flex-flow: row wrap;
+    gap: 49px;
+    margin: 45px 30px;
+ }
+ .product-item{
+  border: 2px solid #E0E0E0;
+  width: 300px;
+  margin: auto;
+  border-radius: 15px;
+  color: #9798A8;
+  padding: 0px 15px;
+  margin-bottom: 30px;
+  height: 370px;
+ }
+ .product-item>p{
+  font-weight: bold;
+ }
+ .key-features{
+  color: #3b9e35;
+  margin: 15px 0px
+ }
+ .pro-features p{
+  padding: 2px 0px;
+ }
+ .product-logo-container{
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  gap: 20px;
+  color: black;
+ }
+ .product-logo-container img{
+  width: 50px;
+ }
+ .pro-price-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0px;
+  color: rgb(106, 106, 239);
+  font-weight: bold;
+ }
+ .pro-price-container button{
+  border: none;
+  padding: 11px 25px;
+  color: white;
+  background-color: rgba(6, 101, 131, 0.712);
+  border-radius: 4px;
+ }
 
 
 
@@ -201,6 +288,8 @@
     background-size: cover;
     color: white;
     border-radius: 18px;
+    padding: 27px 0px;
+    padding-bottom: 140px;
     
   }
   .services-container h1{
@@ -219,15 +308,19 @@
   }
   .service-item{
     width: 200px;
-
     padding: 15px 30px;
     margin: auto;
+    border: 2px solid green;
+    border-radius: 15px;
   }
   .service-heading{
     color: green;
     font-size: 20px;
     text-align: center;
+    background-color: greenyellow;
     margin-bottom: 8px;
+    border-radius: 30px;
+    padding: 3px 4px;
   }
   .service-details{
     font-size: 19px;
@@ -275,18 +368,50 @@
    
     padding: 30px 0;
   }
+
+  /* Frequently asked questions  */
+  .question-container{
+    background-color: #304258;
+    padding: 100px 0px;
+    
+  }
+  .question-container h1{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 60px;
+    color: white;
+    font-size: 50px;
+  }
+  .question-item{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  #question-para{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  #answer-para{
+    color: #ACB1B4;
+    font-size: 19px;
+    word-spacing: 2px;
+   
+  }
   
-  /* //footer  */
+ 
 
   
 
-  footer{
-    margin-top: 20px;
+footer{
+   
     padding: 20px 50px;
     background-color: black;
     color: white;
     overflow: auto;
-  }
+}
   .footer-details{
     display: flex;
     justify-content: space-between;
@@ -398,6 +523,10 @@
    } 
   }
   @media screen and (max-width : 1085px) {
+    .save-container{
+      flex-direction: column;
+      
+     }
     .footer-details{
       display: flex;
       flex-direction: column;
@@ -453,6 +582,10 @@
 }
   }
   @media screen and (max-width : 391px ) {
+    .save-container h1{
+      font-size: 45px;
+      
+     }
     .main-img img{
       height: 50vh;
     }

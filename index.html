@@ -2,14 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
     <title>RJMGconsultancy</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="whats-app-container">
       <a href="https://wa.me/+918478042563" target="_blank">
-
         <img id="whatsapp" src="/icons/whatsapp.png" />
       </a>
     </div>
@@ -36,19 +38,26 @@
         <div class="right-contact">
           <div class="facebook"><img src="./icons/Facebook.png" /></div>
           <div class="facebook"><img src="./icons/linkedin.png" /></div>
-          <div class="facebook"><img src="./images/logo-ig-png-instagram-logo-camel-productions-website-25.png" /></div>
+          <div class="facebook">
+            <img
+              src="./images/logo-ig-png-instagram-logo-camel-productions-website-25.png"
+            />
+          </div>
         </div>
       </div>
-      
     </nav>
     <div class="mobile-menu">
       <div class="menu-container-mobile">
         <div class="left-logo-container">
-          <img src="./icons/logo1.png" />
+          <img onclick="reload()" src="./icons/logo1.png" />
         </div>
-        <img onclick="menuClicked()" id="menu-icon-mobile" src="./icons/menu.png" />
+        <img
+          onclick="menuClicked()"
+          id="menu-icon-mobile"
+          src="./icons/menu.png"
+        />
       </div>
-      <div id="menu-mobile-items"  class="menu-mobile-items">
+      <div id="menu-mobile-items" class="menu-mobile-items">
         <ul>
           <div class="menu-child">
             <a><li>Home</li></a>
@@ -68,7 +77,7 @@
     <div id="menu-container-sticky">
       <div class="menu-container">
         <div class="left-logo-container">
-          <img src="./icons/logo1.png" />
+          <img onclick="reload()" src="./icons/logo1.png" />
         </div>
         <div class="right-menu-container">
           <ul>
@@ -80,8 +89,8 @@
         </div>
       </div>
     </div>
-    
-       <!-- <div class="slider-plus-container">
+
+    <!-- <div class="slider-plus-container">
         <div>
           <img onclick="goPrev()" class="arrow" src="./icons/left=arrow.png" />
         </div>
@@ -99,39 +108,49 @@
       </div> -->
 
     <main>
-      
+      <div class="heading-container">
+        <div class="save-container">
+          <h1 id="save-money">Save money.</h1>
+          <h1 id="save-time">Save time.</h1>
+        </div>
+        <p>
+          Professional Solutions, Trusted Results: Unlocking Your Financial
+          Potential.
+        </p>
+      </div>
       <div class="popular-products">
-        <h1>Save money.</h1>
-        <h1>Save time.</h1>
-        <p>Professional Solutions, Trusted Results: Unlocking Your Financial Potential.</p>
-        <h2 id="popular-products-heading">Popular-products</h2>
+        <h2 id="popular-products-heading">Popular Products</h2>
+        <!-- <h4 id="product-catagory-name"></h4> -->
         <div class="product-container">
-          <h4 id="product-catagory-name">ITR</h4>
-
           <div class="product-item">
             <div class="product-logo-container">
-              <img src="./icons/product-icons/salaried.png">
+              <img src="./icons/product-icons/salaried.png" />
               <h3>Salaried</h3>
             </div>
-            <P>Quick and hassle-free tax filing for salaried individuals</P>
+            <p>Quick and hassle-free tax filing for salaried individuals</p>
             <p class="key-features">Key Features</p>
             <div class="pro-features">
               <p>&#8226; Maximize deductions and optimize tax savings</p>
               <p>&#8226; Expert guidance on investment declarations</p>
-              <p>&#8226; Efficient handling of Form-16 and other tax documents</p>
+              <p>
+                &#8226; Efficient handling of Form-16 and other tax documents
+              </p>
             </div>
             <div class="pro-price-container">
               <p>Price: 300Rs</p>
               <button>Book Now</button>
             </div>
           </div>
-          
+
           <div class="product-item">
             <div class="product-logo-container">
-              <img src="./icons/product-icons/selfemploye.png">
+              <img src="./icons/product-icons/selfemploye.png" />
               <h3>Self-Employed</h3>
             </div>
-            <P>Tax and accounting solutions tailored for self-employed individuals</P>
+            <p>
+              Tax and accounting solutions tailored for self-employed
+              individuals
+            </p>
             <p class="key-features">Key Features</p>
             <div class="pro-features">
               <p>&#8226; Streamline bookkeeping and financial records</p>
@@ -143,106 +162,13 @@
               <button>Book Now</button>
             </div>
           </div>
-          
-          <div class="product-item">
-            <div class="product-logo-container">
-              <img src="./icons/product-icons/business.png">
-              <h3>Business</h3>
-            </div>
-            <P>End-to-end financial services for businesses of all sizes</P>
-            <p class="key-features">Key Features</p>
-            <div class="pro-features">
-              <p>&#8226; Bookkeeping, accounting, and financial reporting</p>
-              <p>&#8226; GST registration, filing, and compliance</p>
-              <p>&#8226; Strategic tax planning and business advisory</p>
-            </div>
-            <div class="pro-price-container">
-              <p>Price: 300Rs</p>
-              <button>Book Now</button>
-            </div>
-          </div>
-          
-          <div class="product-item">
-            <div class="product-logo-container">
-              <img src="./icons/product-icons/nri.png">
-              <h3>NRI</h3>
-            </div>
-            <P>Expert financial and tax services for non-resident Indians</P>
-            <p class="key-features">Key Features</p>
-            <div class="pro-features">
-              <p>&#8226; Income tax filing and compliance for NRIs</p>
-              <p>&#8226; Remittance advice and foreign asset reporting</p>
-              <p>&#8226; Guidance on investments in India and repatriation of funds</p>
-            </div>
-            <div class="pro-price-container">
-              <p>Price: 300Rs</p>
-              <button>Book Now</button>
-            </div>
-          </div>
-          
-          <div class="product-item">
-            <div class="product-logo-container">
-              <img src="./icons/product-icons/rentalincome.png">
-              <h3>RentalIncome</h3>
-            </div>
-            <P>Efficient management of tax and finances for rental income</P>
-            <p class="key-features">Key Features</p>
-            <div class="pro-features">
-              <p>&#8226; Optimize deductions and minimize taxable rental income</p>
-              <p>&#8226; Guidance on HRA, property taxes, and rental agreements</p>
-              <p>&#8226; Comprehensive support for filing rental income tax returns</p>
-            </div>
-            <div class="pro-price-container">
-              <p>Price: 300Rs</p>
-              <button>Book Now</button>
-            </div>
-          </div>
-        </div>
-        <div class="product-container">
-          <h4 id="product-catagory-name">ITR</h4>
 
           <div class="product-item">
             <div class="product-logo-container">
-              <img src="./icons/product-icons/salaried.png">
-              <h3>Salaried</h3>
-            </div>
-            <P>Quick and hassle-free tax filing for salaried individuals</P>
-            <p class="key-features">Key Features</p>
-            <div class="pro-features">
-              <p>&#8226; Maximize deductions and optimize tax savings</p>
-              <p>&#8226; Expert guidance on investment declarations</p>
-              <p>&#8226; Efficient handling of Form-16 and other tax documents</p>
-            </div>
-            <div class="pro-price-container">
-              <p>Price: 300Rs</p>
-              <button>Book Now</button>
-            </div>
-          </div>
-          
-          <div class="product-item">
-            <div class="product-logo-container">
-              <img src="./icons/product-icons/selfemploye.png">
-              <h3>Self-Employed</h3>
-            </div>
-            <P>Tax and accounting solutions tailored for self-employed individuals</P>
-            <p class="key-features">Key Features</p>
-            <div class="pro-features">
-              <p>&#8226; Streamline bookkeeping and financial records</p>
-              <p>&#8226; Expert advice on deductions and exemptions</p>
-              <p>&#8226; Comprehensive support for GST compliance</p>
-            </div>
-            <div class="pro-price-container">
-              <p>Price: 300Rs</p>
-              <button>Book Now</button>
-            </div>
-          </div>
-          
-          <div class="product-item">
-            <div class="product-logo-container">
-              <img src="./icons/product-icons/business.png">
+              <img src="./icons/product-icons/business.png" />
               <h3>Business</h3>
             </div>
-            <P>End-to-end financial services for businesses of all sizes</P>
+            <p>End-to-end financial services for businesses of all sizes</p>
             <p class="key-features">Key Features</p>
             <div class="pro-features">
               <p>&#8226; Bookkeeping, accounting, and financial reporting</p>
@@ -254,129 +180,271 @@
               <button>Book Now</button>
             </div>
           </div>
-          
-          <div class="product-item">
-            <div class="product-logo-container">
-              <img src="./icons/product-icons/nri.png">
-              <h3>NRI</h3>
-            </div>
-            <P>Expert financial and tax services for non-resident Indians</P>
-            <p class="key-features">Key Features</p>
-            <div class="pro-features">
-              <p>&#8226; Income tax filing and compliance for NRIs</p>
-              <p>&#8226; Remittance advice and foreign asset reporting</p>
-              <p>&#8226; Guidance on investments in India and repatriation of funds</p>
-            </div>
-            <div class="pro-price-container">
-              <p>Price: 300Rs</p>
-              <button>Book Now</button>
-            </div>
-          </div>
-          
-          <div class="product-item">
-            <div class="product-logo-container">
-              <img src="./icons/product-icons/rentalincome.png">
-              <h3>RentalIncome</h3>
-            </div>
-            <P>Efficient management of tax and finances for rental income</P>
-            <p class="key-features">Key Features</p>
-            <div class="pro-features">
-              <p>&#8226; Optimize deductions and minimize taxable rental income</p>
-              <p>&#8226; Guidance on HRA, property taxes, and rental agreements</p>
-              <p>&#8226; Comprehensive support for filing rental income tax returns</p>
-            </div>
-            <div class="pro-price-container">
-              <p>Price: 300Rs</p>
-              <button>Book Now</button>
-            </div>
-          </div>
-        </div>
-        <div class="product-container">
-          <h4 id="product-catagory-name">ITR</h4>
 
           <div class="product-item">
             <div class="product-logo-container">
-              <img src="./icons/product-icons/salaried.png">
-              <h3>Salaried</h3>
-            </div>
-            <P>Quick and hassle-free tax filing for salaried individuals</P>
-            <p class="key-features">Key Features</p>
-            <div class="pro-features">
-              <p>&#8226; Maximize deductions and optimize tax savings</p>
-              <p>&#8226; Expert guidance on investment declarations</p>
-              <p>&#8226; Efficient handling of Form-16 and other tax documents</p>
-            </div>
-            <div class="pro-price-container">
-              <p>Price: 300Rs</p>
-              <button>Book Now</button>
-            </div>
-          </div>
-          
-          <div class="product-item">
-            <div class="product-logo-container">
-              <img src="./icons/product-icons/selfemploye.png">
-              <h3>Self-Employed</h3>
-            </div>
-            <P>Tax and accounting solutions tailored for self-employed individuals</P>
-            <p class="key-features">Key Features</p>
-            <div class="pro-features">
-              <p>&#8226; Streamline bookkeeping and financial records</p>
-              <p>&#8226; Expert advice on deductions and exemptions</p>
-              <p>&#8226; Comprehensive support for GST compliance</p>
-            </div>
-            <div class="pro-price-container">
-              <p>Price: 300Rs</p>
-              <button>Book Now</button>
-            </div>
-          </div>
-          
-          <div class="product-item">
-            <div class="product-logo-container">
-              <img src="./icons/product-icons/business.png">
-              <h3>Business</h3>
-            </div>
-            <P>End-to-end financial services for businesses of all sizes</P>
-            <p class="key-features">Key Features</p>
-            <div class="pro-features">
-              <p>&#8226; Bookkeeping, accounting, and financial reporting</p>
-              <p>&#8226; GST registration, filing, and compliance</p>
-              <p>&#8226; Strategic tax planning and business advisory</p>
-            </div>
-            <div class="pro-price-container">
-              <p>Price: 300Rs</p>
-              <button>Book Now</button>
-            </div>
-          </div>
-          
-          <div class="product-item">
-            <div class="product-logo-container">
-              <img src="./icons/product-icons/nri.png">
+              <img src="./icons/product-icons/nri.png" />
               <h3>NRI</h3>
             </div>
-            <P>Expert financial and tax services for non-resident Indians</P>
+            <p>Expert financial and tax services for non-resident Indians</p>
             <p class="key-features">Key Features</p>
             <div class="pro-features">
               <p>&#8226; Income tax filing and compliance for NRIs</p>
               <p>&#8226; Remittance advice and foreign asset reporting</p>
-              <p>&#8226; Guidance on investments in India and repatriation of funds</p>
+              <p>
+                &#8226; Guidance on investments in India and repatriation of
+                funds
+              </p>
             </div>
             <div class="pro-price-container">
               <p>Price: 300Rs</p>
               <button>Book Now</button>
             </div>
           </div>
-          
+
           <div class="product-item">
             <div class="product-logo-container">
-              <img src="./icons/product-icons/rentalincome.png">
+              <img src="./icons/product-icons/rentalincome.png" />
               <h3>RentalIncome</h3>
             </div>
-            <P>Efficient management of tax and finances for rental income</P>
+            <p>Efficient management of tax and finances for rental income</p>
             <p class="key-features">Key Features</p>
             <div class="pro-features">
-              <p>&#8226; Optimize deductions and minimize taxable rental income</p>
-              <p>&#8226; Guidance on HRA, property taxes, and rental agreements</p>
-              <p>&#8226; Comprehensive support for filing rental income tax returns</p>
+              <p>
+                &#8226; Optimize deductions and minimize taxable rental income
+              </p>
+              <p>
+                &#8226; Guidance on HRA, property taxes, and rental agreements
+              </p>
+              <p>
+                &#8226; Comprehensive support for filing rental income tax
+                returns
+              </p>
+            </div>
+            <div class="pro-price-container">
+              <p>Price: 300Rs</p>
+              <button>Book Now</button>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-logo-container">
+              <img src="./icons/product-icons/nri.png" />
+              <h3>NRI</h3>
+            </div>
+            <p>Expert financial and tax services for non-resident Indians</p>
+            <p class="key-features">Key Features</p>
+            <div class="pro-features">
+              <p>&#8226; Income tax filing and compliance for NRIs</p>
+              <p>&#8226; Remittance advice and foreign asset reporting</p>
+              <p>
+                &#8226; Guidance on investments in India and repatriation of
+                funds
+              </p>
+            </div>
+            <div class="pro-price-container">
+              <p>Price: 300Rs</p>
+              <button>Book Now</button>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-logo-container">
+              <img src="./icons/product-icons/rentalincome.png" />
+              <h3>RentalIncome</h3>
+            </div>
+            <p>Efficient management of tax and finances for rental income</p>
+            <p class="key-features">Key Features</p>
+            <div class="pro-features">
+              <p>
+                &#8226; Optimize deductions and minimize taxable rental income
+              </p>
+              <p>
+                &#8226; Guidance on HRA, property taxes, and rental agreements
+              </p>
+              <p>
+                &#8226; Comprehensive support for filing rental income tax
+                returns
+              </p>
+            </div>
+            <div class="pro-price-container">
+              <p>Price: 300Rs</p>
+              <button>Book Now</button>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-logo-container">
+              <img src="./icons/product-icons/nri.png" />
+              <h3>NRI</h3>
+            </div>
+            <p>Expert financial and tax services for non-resident Indians</p>
+            <p class="key-features">Key Features</p>
+            <div class="pro-features">
+              <p>&#8226; Income tax filing and compliance for NRIs</p>
+              <p>&#8226; Remittance advice and foreign asset reporting</p>
+              <p>
+                &#8226; Guidance on investments in India and repatriation of
+                funds
+              </p>
+            </div>
+            <div class="pro-price-container">
+              <p>Price: 300Rs</p>
+              <button>Book Now</button>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-logo-container">
+              <img src="./icons/product-icons/rentalincome.png" />
+              <h3>RentalIncome</h3>
+            </div>
+            <p>Efficient management of tax and finances for rental income</p>
+            <p class="key-features">Key Features</p>
+            <div class="pro-features">
+              <p>
+                &#8226; Optimize deductions and minimize taxable rental income
+              </p>
+              <p>
+                &#8226; Guidance on HRA, property taxes, and rental agreements
+              </p>
+              <p>
+                &#8226; Comprehensive support for filing rental income tax
+                returns
+              </p>
+            </div>
+            <div class="pro-price-container">
+              <p>Price: 300Rs</p>
+              <button>Book Now</button>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-logo-container">
+              <img src="./icons/product-icons/nri.png" />
+              <h3>NRI</h3>
+            </div>
+            <p>Expert financial and tax services for non-resident Indians</p>
+            <p class="key-features">Key Features</p>
+            <div class="pro-features">
+              <p>&#8226; Income tax filing and compliance for NRIs</p>
+              <p>&#8226; Remittance advice and foreign asset reporting</p>
+              <p>
+                &#8226; Guidance on investments in India and repatriation of
+                funds
+              </p>
+            </div>
+            <div class="pro-price-container">
+              <p>Price: 300Rs</p>
+              <button>Book Now</button>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-logo-container">
+              <img src="./icons/product-icons/rentalincome.png" />
+              <h3>RentalIncome</h3>
+            </div>
+            <p>Efficient management of tax and finances for rental income</p>
+            <p class="key-features">Key Features</p>
+            <div class="pro-features">
+              <p>
+                &#8226; Optimize deductions and minimize taxable rental income
+              </p>
+              <p>
+                &#8226; Guidance on HRA, property taxes, and rental agreements
+              </p>
+              <p>
+                &#8226; Comprehensive support for filing rental income tax
+                returns
+              </p>
+            </div>
+            <div class="pro-price-container">
+              <p>Price: 300Rs</p>
+              <button>Book Now</button>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-logo-container">
+              <img src="./icons/product-icons/nri.png" />
+              <h3>NRI</h3>
+            </div>
+            <p>Expert financial and tax services for non-resident Indians</p>
+            <p class="key-features">Key Features</p>
+            <div class="pro-features">
+              <p>&#8226; Income tax filing and compliance for NRIs</p>
+              <p>&#8226; Remittance advice and foreign asset reporting</p>
+              <p>
+                &#8226; Guidance on investments in India and repatriation of
+                funds
+              </p>
+            </div>
+            <div class="pro-price-container">
+              <p>Price: 300Rs</p>
+              <button>Book Now</button>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-logo-container">
+              <img src="./icons/product-icons/rentalincome.png" />
+              <h3>RentalIncome</h3>
+            </div>
+            <p>Efficient management of tax and finances for rental income</p>
+            <p class="key-features">Key Features</p>
+            <div class="pro-features">
+              <p>
+                &#8226; Optimize deductions and minimize taxable rental income
+              </p>
+              <p>
+                &#8226; Guidance on HRA, property taxes, and rental agreements
+              </p>
+              <p>
+                &#8226; Comprehensive support for filing rental income tax
+                returns
+              </p>
+            </div>
+            <div class="pro-price-container">
+              <p>Price: 300Rs</p>
+              <button>Book Now</button>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-logo-container">
+              <img src="./icons/product-icons/nri.png" />
+              <h3>NRI</h3>
+            </div>
+            <p>Expert financial and tax services for non-resident Indians</p>
+            <p class="key-features">Key Features</p>
+            <div class="pro-features">
+              <p>&#8226; Income tax filing and compliance for NRIs</p>
+              <p>&#8226; Remittance advice and foreign asset reporting</p>
+              <p>
+                &#8226; Guidance on investments in India and repatriation of
+                funds
+              </p>
+            </div>
+            <div class="pro-price-container">
+              <p>Price: 300Rs</p>
+              <button>Book Now</button>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-logo-container">
+              <img src="./icons/product-icons/rentalincome.png" />
+              <h3>RentalIncome</h3>
+            </div>
+            <p>Efficient management of tax and finances for rental income</p>
+            <p class="key-features">Key Features</p>
+            <div class="pro-features">
+              <p>
+                &#8226; Optimize deductions and minimize taxable rental income
+              </p>
+              <p>
+                &#8226; Guidance on HRA, property taxes, and rental agreements
+              </p>
+              <p>
+                &#8226; Comprehensive support for filing rental income tax
+                returns
+              </p>
             </div>
             <div class="pro-price-container">
               <p>Price: 300Rs</p>
@@ -385,8 +453,6 @@
           </div>
         </div>
       </div>
-
-
 
       <div class="services-container">
         <h1>Our Services</h1>
@@ -429,87 +495,149 @@
     </main>
     <h2 id="testimonail-heading">Testimonails</h2>
     <div class="testimonails">
-     <div id="left-arrow" class="left-arrow">
-      <img src="./icons/left=arrow.png">
-     </div>
-     <div id="review-container" class="review-container">
-      <div class="reviews">
-        <p class="review-para">
-          Never Seen such an amazing level of professionalism. Always recommend their services.
-        </p>
-        <p class="by">-Biswas Kumar</p>
-        
+      <div id="left-arrow" class="left-arrow">
+        <img src="./icons/left=arrow.png" />
       </div>
-      <div class="reviews">
-        <p class="review-para">
-          Never seen such an amazing level of professionalism. Always recommend their services.
-        </p>
-        <p class="by">- Rajesh Kumar</p>
+      <div id="review-container" class="review-container">
+        <div class="reviews">
+          <p class="review-para">
+            Never Seen such an amazing level of professionalism. Always
+            recommend their services.
+          </p>
+          <p class="by">-Biswas Kumar</p>
+        </div>
+        <div class="reviews">
+          <p class="review-para">
+            Never seen such an amazing level of professionalism. Always
+            recommend their services.
+          </p>
+          <p class="by">- Rajesh Kumar</p>
+        </div>
+        <div class="reviews">
+          <p class="review-para">
+            RJMG Consultancy is top-notch! Their audit services are thorough and
+            accurate. Highly satisfied with their work.
+          </p>
+          <p class="by">- Meera Sharma</p>
+        </div>
+        <div class="reviews">
+          <p class="review-para">
+            I had a great experience with RJMG Consultancy for my GST
+            registration. They made the process quick and hassle-free. Highly
+            recommended.
+          </p>
+          <p class="by">- Rohit Gupta</p>
+        </div>
+        <div class="reviews">
+          <p class="review-para">
+            RJMG Consultancy helped me with my business registration. Their
+            expertise and guidance were invaluable. Extremely satisfied with
+            their services.
+          </p>
+          <p class="by">- Nisha Patel</p>
+        </div>
+        <div class="reviews">
+          <p class="review-para">
+            I've been using RJMG Consultancy for my tax services for years. They
+            are reliable, knowledgeable, and always provide accurate advice.
+            Can't imagine working with anyone else.
+          </p>
+          <p class="by">- Deepak Verma</p>
+        </div>
+        <div class="reviews">
+          <p class="review-para">
+            RJMG Consultancy's team is highly professional and responsive. They
+            address all my queries promptly and ensure I am well-informed. Great
+            service overall.
+          </p>
+          <p class="by">- Priya Desai</p>
+        </div>
+        <div class="reviews">
+          <p class="review-para">
+            I hired RJMG Consultancy for my company's audit, and they exceeded
+            my expectations. Thorough, detailed, and delivered on time. I'm
+            impressed!
+          </p>
+          <p class="by">- Ankit Choudhary</p>
+        </div>
+        <div class="reviews">
+          <p class="review-para">
+            RJMG Consultancy has been a valuable partner in managing our tax
+            obligations. Their expertise has saved us both time and money.
+            Highly recommend their tax services.
+          </p>
+          <p class="by">- Radhika Patel</p>
+        </div>
+        <div class="reviews">
+          <p class="review-para">
+            I was struggling with GST compliance until I found RJMG Consultancy.
+            Their team guided me through the process and made it hassle-free.
+            Thank you for your excellent support!
+          </p>
+          <p class="by">- Siddharth Sharma</p>
+        </div>
+        <div class="reviews">
+          <p class="review-para">
+            RJMG Consultancy is my go-to firm for all my financial needs. Their
+            expertise in audit, tax, and business registration is unmatched.
+            Highly satisfied with their services.
+          </p>
+          <p class="by">- Pooja Joshi</p>
+        </div>
+        <div class="reviews">
+          <p class="review-para">
+            Never Seen such an amazing level of professionalism. Always
+            recommend their services.
+          </p>
+          <p class="by">-Biswas Kumar</p>
+        </div>
       </div>
-      <div class="reviews">
-        <p class="review-para">
-          RJMG Consultancy is top-notch! Their audit services are thorough and accurate. Highly satisfied with their work.
-        </p>
-        <p class="by">- Meera Sharma</p>
+      <div id="right-arrow" class="right-arrow">
+        <img src="./icons/right-arrow.png" />
       </div>
-      <div class="reviews">
-        <p class="review-para">
-          I had a great experience with RJMG Consultancy for my GST registration. They made the process quick and hassle-free. Highly recommended.
+    </div>
+    <div class="question-container">
+      <h1>Frequently Asked Questions</h1>
+      <div class="question-item">
+        <h4 id="question-para">What is GST?</h4>
+        <p id="answer-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A ut earum,
+          quae sunt quia culpa eum nesciunt. Facere esse laborum nemo quas
+          molestias eaque porro neque excepturi velit. Omnis, velit!
         </p>
-        <p class="by">- Rohit Gupta</p>
       </div>
-      <div class="reviews">
-        <p class="review-para">
-          RJMG Consultancy helped me with my business registration. Their expertise and guidance were invaluable. Extremely satisfied with their services.
+      <div class="question-item">
+        <h4 id="question-para">What is GST?</h4>
+        <p id="answer-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A ut earum,
+          quae sunt quia culpa eum nesciunt. Facere esse laborum nemo quas
+          molestias eaque porro neque excepturi velit. Omnis, velit!
         </p>
-        <p class="by">- Nisha Patel</p>
       </div>
-      <div class="reviews">
-        <p class="review-para">
-          I've been using RJMG Consultancy for my tax services for years. They are reliable, knowledgeable, and always provide accurate advice. Can't imagine working with anyone else.
+      <div class="question-item">
+        <h4 id="question-para">What is GST?</h4>
+        <p id="answer-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A ut earum,
+          quae sunt quia culpa eum nesciunt. Facere esse laborum nemo quas
+          molestias eaque porro neque excepturi velit. Omnis, velit!
         </p>
-        <p class="by">- Deepak Verma</p>
       </div>
-      <div class="reviews">
-        <p class="review-para">
-          RJMG Consultancy's team is highly professional and responsive. They address all my queries promptly and ensure I am well-informed. Great service overall.
+      <div class="question-item">
+        <h4 id="question-para">What is GST?</h4>
+        <p id="answer-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A ut earum,
+          quae sunt quia culpa eum nesciunt. Facere esse laborum nemo quas
+          molestias eaque porro neque excepturi velit. Omnis, velit!
         </p>
-        <p class="by">- Priya Desai</p>
       </div>
-      <div class="reviews">
-        <p class="review-para">
-          I hired RJMG Consultancy for my company's audit, and they exceeded my expectations. Thorough, detailed, and delivered on time. I'm impressed!
+      <div class="question-item">
+        <h4 id="question-para">What is GST?</h4>
+        <p id="answer-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A ut earum,
+          quae sunt quia culpa eum nesciunt. Facere esse laborum nemo quas
+          molestias eaque porro neque excepturi velit. Omnis, velit!
         </p>
-        <p class="by">- Ankit Choudhary</p>
       </div>
-      <div class="reviews">
-        <p class="review-para">
-          RJMG Consultancy has been a valuable partner in managing our tax obligations. Their expertise has saved us both time and money. Highly recommend their tax services.
-        </p>
-        <p class="by">- Radhika Patel</p>
-      </div>
-      <div class="reviews">
-        <p class="review-para">
-          I was struggling with GST compliance until I found RJMG Consultancy. Their team guided me through the process and made it hassle-free. Thank you for your excellent support!
-        </p>
-        <p class="by">- Siddharth Sharma</p>
-      </div>
-      <div class="reviews">
-        <p class="review-para">
-          RJMG Consultancy is my go-to firm for all my financial needs. Their expertise in audit, tax, and business registration is unmatched. Highly satisfied with their services.
-        </p>
-        <p class="by">- Pooja Joshi</p>
-      </div>
-      <div class="reviews">
-        <p class="review-para">
-          Never Seen such an amazing level of professionalism. Always recommend their services.
-        </p>
-        <p class="by">-Biswas Kumar</p>
-      </div>
-     </div>
-     <div id="right-arrow" class="right-arrow">
-      <img src="./icons/right-arrow.png">
-     </div>
     </div>
     <footer id="footer-redirect">
       <div class="footer-details">
