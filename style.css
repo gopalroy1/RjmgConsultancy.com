@@ -263,7 +263,7 @@ color: blue;
 color: orange;
  }
  #popular-products-heading{
-  color: rgba(234, 6, 82, 0.488);
+  color: black;
   margin: 0px 45px;
   margin-top: 40px;
   font-size: 35px;
@@ -319,7 +319,6 @@ color: orange;
  }
 
 
- /* Gpt */
  .old-price-container {
   font-size: 18px;
   display: flex;
@@ -367,7 +366,7 @@ color: orange;
  }
 
 
-/* gpt end  */
+
 
 
 
@@ -572,6 +571,9 @@ footer{
     color: white;
     
   }
+  #insta-logo{
+    background: none;
+  }
   .socials a{
     text-decoration: none;
     color: white;
@@ -683,6 +685,9 @@ footer{
     align-items: center;
    
   }
+  .footer-details{
+    align-items: flex-start;
+  }
   
 }
   }
@@ -705,11 +710,14 @@ footer{
    .footer-details{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 50px;
+    align-items: flex-start;
   }
   #form-container input{
     width: 200px;
     float: none;
+
   }
   }
   @media screen and (max-width : 340px ) {
