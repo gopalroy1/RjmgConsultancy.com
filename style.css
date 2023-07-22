@@ -373,10 +373,6 @@ color: orange;
  /* services container desing 
   */
   .services-container{
-    background-image: url(./images/service-background.avif);
-    overflow: auto;
-    background-size: cover;
-    color: white;
     border-radius: 18px;
     padding: 27px 0px;
     padding-bottom: 140px;
@@ -397,24 +393,47 @@ color: orange;
     flex-flow: row wrap;
   }
   .service-item{
-    width: 200px;
-    padding: 15px 30px;
+  
+    width: 250px;
+    padding: 0 30px;
+    padding-top: 40px;
     margin: auto;
-    border: 2px solid green;
     border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    
   }
   .service-heading{
-    color: green;
+    color: #333;
     font-size: 20px;
     text-align: center;
-    background-color: greenyellow;
     margin-bottom: 8px;
     border-radius: 30px;
     padding: 3px 4px;
   }
+  #service-1{
+    background-color: lavender;
+  }
+  #service-2{
+    background-color: #e6f0ff;
+  }
+  #service-3{
+    background-color: #fde6e6;
+  }
+  #service-4{
+    background-color: #f1f8e9;
+  }
+  #service-5{
+    background-color: lightblue;
+  }
+  #service-6{
+    background-color: palegreen;
+  }
   .service-details{
+    text-align: center;
     font-size: 19px;
     word-spacing: 4px;
+    color: #666;
   }
   /* Testimonials  */
 
@@ -563,7 +582,7 @@ footer{
   
  
   .form-submit-para{
-    color: greenyellow;
+    color: red;
     margin-top: 35px;
     margin-left: 50px;
   }
