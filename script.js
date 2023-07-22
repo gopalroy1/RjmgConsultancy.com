@@ -116,11 +116,11 @@ reviewContainer.addEventListener("wheel",(event)=>{
 leftArrow.addEventListener("click",()=>{
  
     reviewContainer.style.scrollBehavior="smooth";
-    reviewContainer.scrollLeft-= 750;
+    reviewContainer.scrollLeft-= 300;
 })
 rightArrow.addEventListener("click",()=>{
 
     reviewContainer.style.scrollBehavior="smooth";
-    reviewContainer.scrollLeft+= 750;
+    reviewContainer.scrollLeft+= 300;
 })
 
